@@ -3,7 +3,7 @@
 	{{#if carsForSale.image}}
 	<img src="/images/{{carsForSale.image}}" style="width:400px">
 	{{else}}
-	<h3>IMAGE NOT AVAILABLE!!!!</h3>
+	<h2>IMAGE NOT AVAILABLE!!!!</h2>
 	{{/if}}
 </div>
 <div style="float:left">
@@ -18,7 +18,7 @@
 	{{else}}
 	<h3>Price: ${{carsForSale.price}}</h3>
 	{{/if}}
-	<button>Buy this super COOL {{carsForSale.model}}</button>
+	<button class="buy">Buy this super COOL {{carsForSale.model}}</button>
 	<br><br>
-	<button><a href="/carsforsale/">View All Cars -></a></button>
+	<button class="cars"><a href="/carsforsale/">View All Cars -></a></button>
 </div>
