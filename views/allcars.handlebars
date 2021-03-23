@@ -1,0 +1,5 @@
+{{> signin}}
+{{firstName}}
+{{#each carsArray}}
+{{> carlisting carsArray=carsArray firstName=../firstName}}
+{{/each}}
