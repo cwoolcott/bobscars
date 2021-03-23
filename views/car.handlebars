@@ -1,22 +1,18 @@
 {{> signin}}
-
 <div style="float:left">
-
 	{{#if carsForSale.image}}
 	<img src="/images/{{carsForSale.image}}" style="width:400px">
 	{{else}}
 	<h3>IMAGE NOT AVAILABLE!!!!</h3>
 	{{/if}}
 </div>
-
 <div style="float:left">
-
-	<h1 style="color:red; font-weight:bold">
+	<h1 style="color:rgb(149, 0, 255); font-weight:bold">
 		{{#if carsForSale.sold}}
 		Sorry {{firstName}} SOLD!
 		{{/if}}
 	</h1>
-	<h2><b>{{carsForSale.year}} {{carsForSale.make}} {{carsForSale.model}}</b></h2>
+	<h3><b>{{carsForSale.year}} {{carsForSale.make}} {{carsForSale.model}}</b></h3>
 	{{#if firstName}}
 	<h2>{{ firstName }}'s rock bottom Price: ${{carsForSale.price}}</h2>
 	{{else}}
@@ -24,6 +20,5 @@
 	{{/if}}
 	<button>Buy this rockin' awesome cuz nate says so {{carsForSale.model}}</button>
 	<br><br>
-
-	<button><a href="/carsforsale/">View All Cars</a></button>
+	<button><a href="/carsforsale/">View All Cars -></a></button>
 </div>
